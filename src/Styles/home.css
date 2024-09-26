@@ -1,0 +1,102 @@
+.Dashboard-Container {
+  height: calc(100% - 60px);
+  padding: 22px;
+  gap: 18px;
+  width: 100%;
+  overflow-x: hidden;
+  zoom: 0.8;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Dashboard-Container .column {
+  flex: 1;
+  max-width: calc(22% - 20px);
+  border-radius: 10px;
+}
+
+.Dashboard-Container .Header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.Dashboard-Container .Header .icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.Dashboard-Container .Header .icon-text i {
+  font-size: 24px;
+}
+
+.Dashboard-Container .Header .icon-text .text {
+  padding: 0 14px;
+  font-weight: 600;
+  color: #333;
+  font-size: 17px;
+}
+
+.Dashboard-Container .Header .icon-text span {
+  color: #7f7f7f;
+  font-size: 16px;
+}
+
+.Dashboard-Container .Header .icon-text #todo {
+  color: #7d7d7d;
+}
+
+.Dashboard-Container .Header .icon-text #progress {
+  color: rgba(247, 166, 15, 0.75);
+}
+
+.Dashboard-Container .Header .icon-text #done {
+  color: rgba(79, 39, 210, 0.75);
+}
+
+.Dashboard-Container .Header .icon-text #cancel {
+  color: #8a8a8a;
+}
+
+.Dashboard-Container .Header .icon-text #backlog {
+  color: #5240d4;
+}
+
+.Dashboard-Container .Header .actions i {
+  font-size: 24px;
+  color: #7d7d7d;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .Dashboard-Container {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .Dashboard-Container .column {
+    max-width: calc(80% - 10px); /* Two columns */
+  }
+
+  .Dashboard-Container .Header .icon-text .text {
+    font-size: 15px;
+  }
+
+  .Dashboard-Container .Header .icon-text span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Dashboard-Container .column {
+    max-width: calc(100% - 10px); /* Full width */
+  }
+
+  .Dashboard-Container .Header .icon-text .text {
+    font-size: 14px;
+  }
+
+  .Dashboard-Container .Header .icon-text span {
+    font-size: 12px;
+  }
+}
