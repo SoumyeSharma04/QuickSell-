@@ -1,15 +1,20 @@
-/* Existing CSS */
 .card {
   width: 100%;
-  padding: 18px; 
-  border-radius: 12px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
-  background-color: #cac6c6; 
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #cac6c6;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  background-color: #e0dede;
 }
 
 .card .card-content {
@@ -18,15 +23,6 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
-.card .card-header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 8px; 
-  justify-content: space-between;
-}
-
 .card .card-header p {
   font-family: "Arial", sans-serif;
   font-size: 16px; 
