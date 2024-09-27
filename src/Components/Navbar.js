@@ -56,7 +56,7 @@ const Navbar = ({ grouping: propGrouping, setGrouping, ordering: propOrdering, s
       <div className="dropdown-container" ref={dropdownRef}>
         <button onClick={() => setIsOpen(!isOpen)} className="dropdown-btn">
           <i className="bx bx-slider"></i>
-          <div className="btn-txt">Display</div>
+          <div className="btn-txt">Displays</div>
           <i className="bx bx-chevron-down"></i>
         </button>
         {isOpen && (
