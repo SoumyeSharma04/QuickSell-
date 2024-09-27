@@ -23,6 +23,15 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.card .card-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px; 
+  justify-content: space-between;
+}
+
 .card .card-header p {
   font-family: "Arial", sans-serif;
   font-size: 16px; 
@@ -51,6 +60,9 @@
 }
 
 .card .card-footer .icons {
+  display: flex; /* Ensure icons are aligned horizontally */
+  flex-direction: row;
+  align-items: center;
   height: 24px !important; 
 }
 
